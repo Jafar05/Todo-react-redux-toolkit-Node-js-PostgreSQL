@@ -1,0 +1,52 @@
+.todos {
+  margin-top: 50px;
+  overflow-y: auto;
+  height: 300px;
+}
+.todos-text-name {
+  position: relative;
+  left: 30%;
+}
+.todos-text-email {
+  position: relative;
+  left: 20%;
+}
+.todos-text-update {
+  width: 5px;
+}
+.todos-item {
+  margin: 5px;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  border-left: 2px solid cornflowerblue;
+  position: relative;
+}
+.todos-item.status-main::after {
+  position: absolute;
+  content: "";
+  left: 20px;
+  width: 300px;
+  top: 35%;
+  height: 2px;
+  background: red;
+}
+
+.home {
+  display: inline;
+  text-align: center;
+}
+.home-input {
+  position: relative;
+  left: 200px;
+}
+.home-edit {
+  position: relative;
+  left: 20%;
+}
+
+.rename {
+  size: 1px;
+}
+
+/*# sourceMappingURL=Home.css.map */

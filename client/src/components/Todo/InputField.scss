@@ -1,0 +1,44 @@
+.todos {
+  margin-top: 50px;
+  overflow-y: auto;
+  height: 300px;
+  &-item {
+    margin: 5px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    border-left: 2px solid cornflowerblue;
+    position: relative;
+    &.status{
+      &::after {
+        position: absolute;
+        content: "";
+        left: 20px;
+        width: 450px;
+        top: 49%;
+        height: 2px;
+        background: red;
+      }
+    }
+  }
+  &-buttons {
+    margin-left: auto;
+    display: flex;
+  }
+}
+i {
+  margin: 0 5px;
+  z-index: 1;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.3);
+    transition: transform .3s ease;
+  }
+}
+.pagination {
+  position: relative;
+  left: 50%;
+  align-items: center;
+}
+

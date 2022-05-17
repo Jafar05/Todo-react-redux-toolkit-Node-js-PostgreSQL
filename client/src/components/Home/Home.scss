@@ -1,0 +1,53 @@
+.todos {
+  margin-top: 50px;
+  overflow-y: auto;
+  height: 300px;
+  &-text {
+    &-name {
+      position: relative;
+      left: 30%;
+    }
+    &-email {
+      position: relative;
+      left: 20%;
+    }
+    &-update {
+      width: 5px;
+    }
+
+  }
+  &-item {
+    margin: 5px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    border-left: 2px solid cornflowerblue;
+    position: relative;
+    &.status-main{
+      &::after {
+        position: absolute;
+        content: "";
+        left: 20px;
+        width: 300px;
+        top: 35%;
+        height: 2px;
+        background: red;
+      }
+    }
+  }
+}
+.home {
+  display: inline;
+  text-align: center;
+  &-input {
+    position: relative;
+    left: 200px;
+  }
+  &-edit {
+    position: relative;
+    left: 20%;
+  }
+  }
+.rename {
+  size: 1px;
+}
