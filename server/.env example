@@ -2,3 +2,4 @@ PORT=3001
 JWT_ACCESS_SECRET
 API_URL
 CLIENT_URL
+DATABASE_URL=postgres://<user>:<password>@localhost:3001/<db>
